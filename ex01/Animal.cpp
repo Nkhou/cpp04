@@ -9,6 +9,11 @@ Animal::~Animal()
 {
     std::cout << "destructor Animal called" << std::endl;
 }
+Animal::Animal(std::string type)
+{
+    std::cout << "constructor Animal called" << std::endl;
+    this->type = type;
+}
 
 Animal::Animal(const Animal &copy)
 {

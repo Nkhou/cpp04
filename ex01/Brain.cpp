@@ -3,6 +3,8 @@
 Brain::Brain()
 {
     std::cout << "Brain default constructor called" << std::endl;
+    for (int i = 0; i < 100; ++i)
+        ideas[i] = "";
 }
 
 Brain::~Brain()
@@ -24,25 +26,12 @@ Brain &Brain::operator=(const Brain &copy)
     return (*this);
 }
 
-std::string Brain::identify() const
-{
-    std::stringstream ss;
-    ss << this;
-    return (ss.str());
-}
-
-void Brain::setIdea(int index, std::string idea)
+void Brain::setIdeas(int index, std::string idea)
 {
     this->ideas[index] = idea;
 }
 
-std::string Brain::getIdea(int index) const
+std::string Brain::getIdeas(int index) const
 {
     return (this->ideas[index]);
-}
-
-void Brain::printIdeas() const
-{
-    for (int i = 0; i < 100; i++)
-        std::cout << this->ideas[i] << std::endl;
 }

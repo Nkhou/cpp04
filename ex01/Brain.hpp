@@ -9,5 +9,10 @@ class Brain
     public:
         Brain();
         ~Brain();
-        std::string	identify() const;
+        Brain(const Brain &copy);
+        Brain &operator=(const Brain &copy);
+        std::string getIdeas(int index) const;
+        void setIdeas(int index , std::string ideas);
 };
+
+#endif
