@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/24 14:39:43 by nkhoudro          #+#    #+#             */
+/*   Updated: 2023/11/24 20:11:59 by nkhoudro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "Dog.hpp"
 
 Dog::Dog() : Animal("Dog")
@@ -25,16 +38,6 @@ Dog &Dog::operator=(const Dog &copy)
     this->type = copy.type;
     return (*this);
 }
-
-// void Dog::setIdeas(int index, std::string idea)
-// {
-//     this->brain->setIdeas(index, idea);
-// }
-
-// std::string Dog::getIdeas(int index) const
-// {
-//     return (this->brain->getIdeas(index));
-// }
 
 void Dog::makeSound() const
 {

@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/24 14:38:10 by nkhoudro          #+#    #+#             */
+/*   Updated: 2023/11/24 14:38:11 by nkhoudro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "Brain.hpp"
 
 Brain::Brain()
@@ -26,12 +39,12 @@ Brain &Brain::operator=(const Brain &copy)
     return (*this);
 }
 
-void Brain::setIdeas(int index, std::string idea)
-{
-    this->ideas[index] = idea;
-}
+// void Brain::setIdeas(int index, std::string idea)
+// {
+//     this->ideas[index] = idea;
+// }
 
-std::string Brain::getIdeas(int index) const
-{
-    return (this->ideas[index]);
-}
+// std::string Brain::getIdeas(int index) const
+// {
+//     return (this->ideas[index]);
+// }

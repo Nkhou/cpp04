@@ -1,24 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/24 14:39:58 by nkhoudro          #+#    #+#             */
+/*   Updated: 2023/11/24 19:46:06 by nkhoudro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal()
 {
-    std::cout << "default constructor WrongAnimal called" << std::endl;
+    std::cout << "WrongAnimal default constructor called" << std::endl;
 }
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "destructor WrongAnimal called" << std::endl;
+    std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &copy)
 {
-    std::cout << "copy constructor WrongAnimal called" << std::endl;
+    std::cout << "WrongAnimal copy constructor called" << std::endl;
     *this = copy;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy)
 {
-    std::cout << "assignation operator WrongAnimal called" << std::endl;
+    std::cout << "WrongAnimal assignation operator called" << std::endl;
     this->type = copy.type;
     return (*this);
 }

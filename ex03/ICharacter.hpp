@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ICharacter.hpp                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/24 14:41:08 by nkhoudro          #+#    #+#             */
+/*   Updated: 2023/11/24 14:41:09 by nkhoudro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #ifndef ICHARACTER_HPP
 #define ICHARACTER_HPP
 #include <iostream>
@@ -6,8 +19,6 @@ class AMateria;
 
 class ICharacter
 {
-    protected:
-        std::string name;
     public:
     virtual ~ICharacter() {}
     virtual std::string const & getName() const = 0;

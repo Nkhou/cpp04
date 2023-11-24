@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/24 14:38:20 by nkhoudro          #+#    #+#             */
+/*   Updated: 2023/11/24 19:44:30 by nkhoudro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "Cat.hpp"
 
 Cat::Cat() : Animal("Cat")
@@ -26,15 +39,6 @@ Cat &Cat::operator=(const Cat &copy)
     this->brain = new Brain(*copy.brain);
     this->type = copy.type;
     return (*this);
-}
-void Cat::setIdeas(int index, std::string idea)
-{
-    this->brain->setIdeas(index, idea);
-}
-
-std::string Cat::getIdeas(int index) const
-{
-    return (this->brain->getIdeas(index));
 }
 
 void Cat::makeSound() const
