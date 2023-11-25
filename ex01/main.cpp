@@ -6,7 +6,7 @@
 /*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:38:46 by nkhoudro          #+#    #+#             */
-/*   Updated: 2023/11/24 20:11:19 by nkhoudro         ###   ########.fr       */
+/*   Updated: 2023/11/25 20:32:54 by nkhoudro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
 {
     const Animal* j = new Dog();
     const Animal* i = new Cat();
-    const int n = 1;
+    const int n = 2;
     const Animal* animals[n];
     for (int i = 0; i < n; i++)
     {
@@ -27,6 +27,11 @@ int main()
         else
             animals[i] = new Cat();
     }
+    for (int i = 0; i < n; i++)
+    {
+      animals[i]->makeSound();
+    }
+    
     for (int i = 0; i < n; i++)
         delete animals[i];
     delete j;

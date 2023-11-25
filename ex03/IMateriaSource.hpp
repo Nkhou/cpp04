@@ -6,7 +6,7 @@
 /*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:36:37 by nkhoudro          #+#    #+#             */
-/*   Updated: 2023/11/24 14:36:38 by nkhoudro         ###   ########.fr       */
+/*   Updated: 2023/11/25 20:19:08 by nkhoudro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #ifndef IMATERIASOURCE_HPP
 # define IMATERIASOURCE_HPP
 # include <iostream>
-# include "IMateriaSource.hpp"
+
 class AMateria;
 
 class IMateriaSource

@@ -6,7 +6,7 @@
 /*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:41:08 by nkhoudro          #+#    #+#             */
-/*   Updated: 2023/11/24 14:41:09 by nkhoudro         ###   ########.fr       */
+/*   Updated: 2023/11/24 23:19:08 by nkhoudro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ class ICharacter
     virtual void unequip(int idx) = 0;
     virtual void use(int idx, ICharacter& target) = 0;
 };
+
 #endif

@@ -6,7 +6,7 @@
 /*   By: nkhoudro <nkhoudro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:40:32 by nkhoudro          #+#    #+#             */
-/*   Updated: 2023/11/24 22:56:51 by nkhoudro         ###   ########.fr       */
+/*   Updated: 2023/11/25 20:26:44 by nkhoudro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Character::Character(std::string const & name)
 
 Character::Character(Character const & src)
 {
-    *this = *new Character(src.getName());
+    *this =  src;
 }
 
 Character & Character::operator=(Character const & rhs)
